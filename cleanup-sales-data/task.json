@@ -1,0 +1,15 @@
+cat << 'EOF' > task.json
+{
+  "name": "your-task-name",
+  "version": "1.0.0",
+  "description": "Short description of what the agent needs to accomplish.",
+  "author": "Your Name / GitHub Username",
+  "difficulty": "medium",
+  "timeout_seconds": 600,
+  "environment": {
+    "dockerfile": "Dockerfile"
+  },
+  "verifier": {
+    "script": "eval.sh"
+  }
+}
